@@ -1,0 +1,32 @@
+on post-fs-data
+    mkdir /data/nt_performance 0770 root system encryption=None
+    copy /vendor/etc/nt_performance/nt_perf_enhancer.cfg /data/nt_performance/nt_perf_enhancer.cfg
+    chown system system /data/nt_performance/nt_perf_enhancer.cfg
+    chmod 0660 /data/nt_performance/nt_perf_enhancer.cfg
+    copy /vendor/etc/nt_performance/nt_animation_boost_perflock_boost.cfg /data/nt_performance/nt_animation_boost_perflock_boost.cfg
+    chown system system /data/nt_performance/nt_animation_boost_perflock_boost.cfg
+    chmod 0660 /data/nt_performance/nt_animation_boost_perflock_boost.cfg
+
+    copy /vendor/etc/nt_performance/platform_config.xml /data/nt_performance/platform_config.xml
+    chown system system /data/nt_performance/platform_config.xml
+    chmod 0660 /data/nt_performance/platform_config.xml
+
+    copy /system_ext/etc/nt_performance/cmd_table.xml /data/nt_performance/cmd_table.xml
+    chown system system /data/nt_performance/cmd_table.xml
+    chmod 0660 /data/nt_performance/cmd_table.xml
+
+    copy /vendor/etc/nt_performance/scene_table.xml /data/nt_performance/scene_table.xml
+    chown system system /data/nt_performance/scene_table.xml
+    chmod 0660 /data/nt_performance/scene_table.xml
+
+    copy /vendor/etc/nt_performance/activity_customization.xml /data/nt_performance/activity_customization.xml
+    chown system system /data/nt_performance/activity_customization.xml
+    chmod 0660 /data/nt_performance/activity_customization.xml
+
+    copy /vendor/etc/nt_performance/nt_named_thread_affinity.xml /data/nt_performance/nt_named_thread_affinity.xml
+    chown system system /data/nt_performance/nt_named_thread_affinity.xml
+    chmod 0660 /data/nt_performance/nt_named_thread_affinity.xml
+
+    copy /vendor/etc/nt_performance/nt_sys_overscroller_config.xml /data/nt_performance/nt_sys_overscroller_config.xml
+    chown system system /data/nt_performance/nt_sys_overscroller_config.xml
+    chmod 0660 /data/nt_performance/nt_sys_overscroller_config.xml

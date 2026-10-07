@@ -1,0 +1,54 @@
+[
+    {
+		"scene_name": "config",
+		"front_lux_thresh":380
+		
+    },
+    {
+    "scene_name": "front_light",
+    "scene_config": {
+				"beta": 0.0,
+				"mouth": 0.0,
+				"eye": 0.2,
+				"eyebrow": 0.2,
+				"blend_weight_border": 0.65,
+				"smoothness": 1.0,
+				"blend_weight_eyebrow": 0.8,
+				"blend_weight_eye": 0.8,
+				"blend_weight_mouth": 0.6,
+				"blend_weight_face": 0.8,
+				"blend_weight_hair": 0.6,
+				"blend_weight_jaw": 0.6,
+				"smallface_eyebrow_subblendweight_value": 0.2,
+				"smallface_eyebrow_subblendweight_facesize_threshold": 0,
+				"quality_level": 0,
+				"iso_thres": 20000,
+				"extend": "L2c1NiYMOio9IScMIDwkN2BpdGczMzcgJ2d4cmAxOy4xOh03MSMxMTYMIC0mNzE7dn90YG5zdiI1JzEgCzM1IGBpdHJ4cmA7NSwmDSA/MSswNicnNSw4DSciISQ4DSA/MSswNicnNSw4cHhzZWl0cCo3Nzc7ImBpdD52OiYwJiokDSc9NSc4N2BpdHUpfmJxOSohJioMNiomNichCzU1Nh0hNTE9PWBpdHR6Z25zdig7JzY7CzY8MyY2CyY4OzIMIiQ4JydxbmVkfHp/dGchIScMNio/NyoMOSowN2BpdHR4cmAmJyALOiYMNSEwDSw8PTYxcHhzZWl0cDcgMRo8Nh0xOCA6Nh03MTE1Oy5xbmVlfmJxITYxDSo3Cy81JR0xOCA6NmBpdHR4cmAmJyALOiYMOSohJioMMSEzN2BpdHR4cmAmJyALOiYMOSohJioMJy01NicMNikxPCZxbmVlfmJxITYxDSo3Cys7ITcxCyg7Nic/CyExJiM6OBo7NB01NSYxcHhzZTg="
+		}
+
+    },
+	{
+    "scene_name": "front_dark",
+    "scene_config": {
+				"beta": 0.0,
+				"mouth": 0.0,
+				"eye": 0.2,
+				"eyebrow": 0.2,
+				"blend_weight_border": 0.8,
+				"smoothness": 1.0,
+				"blend_weight_eyebrow": 0.8,
+				"blend_weight_eye": 0.8,
+				"blend_weight_mouth": 0.8,
+				"blend_weight_face": 0.8,
+				"blend_weight_hair": 0.6,
+				"blend_weight_jaw": 0.6,
+				"smallface_eyebrow_subblendweight_value": 0.2,
+				"smallface_eyebrow_subblendweight_facesize_threshold": 0,
+				"quality_level": 0,
+				"iso_thres": 20000,
+				"extend": "L2c1NiYMOio9IScMIDwkN2BpdGczMzcgJ2d4cmAxOy4xOh03MSMxMTYMIC0mNzE7dn90YG5zdiI1JzEgCzM1IGBpdHJ4cmA7NSwmDSA/MSswNicnNSw4DSciISQ4DSA/MSswNicnNSw4cHhzZWl0cCo3Nzc7ImBpdD52OiYwJiokDSc9NSc4N2BpdHUpfmJxOSohJioMNiomNichCzU1Nh0hNTE9PWBpdHR6Z25zdig7JzY7CzY8MyY2CyY4OzIMIiQ4JydxbmVkfHp/dGchIScMNio/NyoMOSowN2BpdHR4cmAmJyALOiYMNSEwDSw8PTYxcHhzZWl0cDcgMRo8Nh0xOCA6Nh03MTE1Oy5xbmVlfmJxITYxDSo3Cy81JR0xOCA6NmBpdHR4cmAmJyALOiYMOSohJioMMSEzN2BpdHR4cmAmJyALOiYMOSohJioMJy01NicMNikxPCZxbmVlfmJxITYxDSo3Cys7ITcxCyg7Nic/CyExJiM6OBo7NB01NSYxcHhzZTg="
+		}
+
+    }
+    
+]

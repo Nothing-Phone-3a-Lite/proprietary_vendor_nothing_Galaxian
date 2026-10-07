@@ -1,0 +1,4 @@
+[
+  {"defaultValue":1.0,"domain":[0.0,1.0],"name":"lut","uniform":300,"value":1.0},
+  {"defaultValue":0.0,"domain":[0.0,2.0],"name":"flip","uniform":209,"value":0.0}
+]

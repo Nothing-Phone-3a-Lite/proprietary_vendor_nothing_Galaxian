@@ -1,0 +1,7 @@
+service vendor.noth.camera-default /vendor/bin/hw/vendor.noth.hardware.camera-service
+    interface aidl vendor.noth.hardware.camera.INtCamService/default
+    class hal
+    user cameraserver
+    group audio camera input drmrpc
+    ioprio rt 4
+    task_profiles NtCamAlgoCapacity

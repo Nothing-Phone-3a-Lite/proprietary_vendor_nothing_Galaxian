@@ -1,0 +1,295 @@
+# Pre add
+#on early-init
+
+
+
+on init
+    # PSI
+    chown system system /proc/pressure/cpu
+    chmod 0664 /proc/pressure/cpu
+    chown system system /proc/pressure/io
+    chmod 0664 /proc/pressure/io
+
+
+
+# Origin cpuctl and cpuset node was created in init stage
+# so control custom in late-init to makesure all node is
+# created
+on late-init
+    # Cpuctl
+    ## Enable permission to origin group
+    chown system system /dev/cpuctl/top-app/cgroup.procs
+    chown system system /dev/cpuctl/top-app/cpu.idle
+    chown system system /dev/cpuctl/top-app/cpu.shares
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.max
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.min
+    chown system system /dev/cpuctl/top-app/tasks
+    chmod 0664 /dev/cpuctl/top-app/cgroup.procs
+    chmod 0664 /dev/cpuctl/top-app/cpu.idle
+    chmod 0664 /dev/cpuctl/top-app/cpu.shares
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/top-app/tasks
+
+    chown system system /dev/cpuctl/rt/cgroup.procs
+    chown system system /dev/cpuctl/rt/cpu.idle
+    chown system system /dev/cpuctl/rt/cpu.shares
+    chown system system /dev/cpuctl/rt/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/rt/cpu.uclamp.max
+    chown system system /dev/cpuctl/rt/cpu.uclamp.min
+    chown system system /dev/cpuctl/rt/tasks
+    chmod 0664 /dev/cpuctl/rt/cgroup.procs
+    chmod 0664 /dev/cpuctl/rt/cpu.idle
+    chmod 0664 /dev/cpuctl/rt/cpu.shares
+    chmod 0664 /dev/cpuctl/rt/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/rt/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/rt/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/rt/tasks
+
+    chown system system /dev/cpuctl/foreground/cgroup.procs
+    chown system system /dev/cpuctl/foreground/cpu.idle
+    chown system system /dev/cpuctl/foreground/cpu.shares
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.max
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.min
+    chown system system /dev/cpuctl/foreground/tasks
+    chmod 0664 /dev/cpuctl/foreground/cgroup.procs
+    chmod 0664 /dev/cpuctl/foreground/cpu.idle
+    chmod 0664 /dev/cpuctl/foreground/cpu.shares
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/foreground/tasks
+
+    chown system system /dev/cpuctl/foreground_window/cgroup.procs
+    chown system system /dev/cpuctl/foreground_window/cpu.idle
+    chown system system /dev/cpuctl/foreground_window/cpu.shares
+    chown system system /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/foreground_window/cpu.uclamp.max
+    chown system system /dev/cpuctl/foreground_window/cpu.uclamp.min
+    chown system system /dev/cpuctl/foreground_window/tasks
+    chmod 0664 /dev/cpuctl/foreground_window/cgroup.procs
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.idle
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.shares
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/foreground_window/tasks
+
+    chown system system /dev/cpuctl/system/cgroup.procs
+    chown system system /dev/cpuctl/system/cpu.idle
+    chown system system /dev/cpuctl/system/cpu.shares
+    chown system system /dev/cpuctl/system/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/system/cpu.uclamp.max
+    chown system system /dev/cpuctl/system/cpu.uclamp.min
+    chown system system /dev/cpuctl/system/tasks
+    chmod 0664 /dev/cpuctl/system/cgroup.procs
+    chmod 0664 /dev/cpuctl/system/cpu.idle
+    chmod 0664 /dev/cpuctl/system/cpu.shares
+    chmod 0664 /dev/cpuctl/system/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/system/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/system/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/system/tasks
+
+    chown system system /dev/cpuctl/system-background/cgroup.procs
+    chown system system /dev/cpuctl/system-background/cpu.idle
+    chown system system /dev/cpuctl/system-background/cpu.shares
+    chown system system /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/system-background/cpu.uclamp.max
+    chown system system /dev/cpuctl/system-background/cpu.uclamp.min
+    chown system system /dev/cpuctl/system-background/tasks
+    chmod 0664 /dev/cpuctl/system-background/cgroup.procs
+    chmod 0664 /dev/cpuctl/system-background/cpu.idle
+    chmod 0664 /dev/cpuctl/system-background/cpu.shares
+    chmod 0664 /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/system-background/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/system-background/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/system-background/tasks
+
+    chown system system /dev/cpuctl/background/cgroup.procs
+    chown system system /dev/cpuctl/background/cpu.idle
+    chown system system /dev/cpuctl/background/cpu.shares
+    chown system system /dev/cpuctl/background/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/background/cpu.uclamp.max
+    chown system system /dev/cpuctl/background/cpu.uclamp.min
+    chown system system /dev/cpuctl/background/tasks
+    chmod 0664 /dev/cpuctl/background/cgroup.procs
+    chmod 0664 /dev/cpuctl/background/cpu.idle
+    chmod 0664 /dev/cpuctl/background/cpu.shares
+    chmod 0664 /dev/cpuctl/background/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/background/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/background/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/background/tasks
+
+    chown system system /dev/cpuctl/dex2oat/cgroup.procs
+    chown system system /dev/cpuctl/dex2oat/cpu.idle
+    chown system system /dev/cpuctl/dex2oat/cpu.shares
+    chown system system /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/dex2oat/cpu.uclamp.max
+    chown system system /dev/cpuctl/dex2oat/cpu.uclamp.min
+    chown system system /dev/cpuctl/dex2oat/tasks
+    chmod 0664 /dev/cpuctl/dex2oat/cgroup.procs
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.idle
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.shares
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/dex2oat/tasks
+
+    chown system system /dev/cpuctl/camera-daemon/cgroup.procs
+    chown system system /dev/cpuctl/camera-daemon/cpu.idle
+    chown system system /dev/cpuctl/camera-daemon/cpu.shares
+    chown system system /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/camera-daemon/cpu.uclamp.max
+    chown system system /dev/cpuctl/camera-daemon/cpu.uclamp.min
+    chown system system /dev/cpuctl/camera-daemon/tasks
+    chmod 0664 /dev/cpuctl/camera-daemon/cgroup.procs
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.idle
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.shares
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/camera-daemon/tasks
+
+    ## ben.chang@bsp, for ARCA-4718
+    mkdir /dev/cpuctl/restricted
+    chown system system /dev/cpuctl/restricted
+    chown system system /dev/cpuctl/restricted/cgroup.procs
+    chown system system /dev/cpuctl/restricted/cpu.idle
+    chown system system /dev/cpuctl/restricted/cpu.shares
+    chown system system /dev/cpuctl/restricted/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/restricted/cpu.uclamp.max
+    chown system system /dev/cpuctl/restricted/cpu.uclamp.min
+    chown system system /dev/cpuctl/restricted/tasks
+    chmod 0664 /dev/cpuctl/restricted/cgroup.procs
+    chmod 0664 /dev/cpuctl/restricted/cpu.idle
+    chmod 0664 /dev/cpuctl/restricted/cpu.shares
+    chmod 0664 /dev/cpuctl/restricted/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/restricted/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/restricted/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/restricted/tasks
+
+    ## zhiming.guan@bsp, 2024/12/02, for TFT-3922
+    ## Create a cpu group for nt foreground processes
+    mkdir /dev/cpuctl/nt_foreground
+    chown system system /dev/cpuctl/nt_foreground
+    chown system system /dev/cpuctl/nt_foreground/cgroup.procs
+    chown system system /dev/cpuctl/nt_foreground/cpu.idle
+    chown system system /dev/cpuctl/nt_foreground/cpu.shares
+    chown system system /dev/cpuctl/nt_foreground/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/nt_foreground/cpu.uclamp.max
+    chown system system /dev/cpuctl/nt_foreground/cpu.uclamp.min
+    chown system system /dev/cpuctl/nt_foreground/tasks
+    chmod 0664 /dev/cpuctl/nt_foreground/cgroup.procs
+    chmod 0664 /dev/cpuctl/nt_foreground/cpu.idle
+    chmod 0664 /dev/cpuctl/nt_foreground/cpu.shares
+    chmod 0664 /dev/cpuctl/nt_foreground/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/nt_foreground/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/nt_foreground/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/nt_foreground/tasks
+    ## endif
+
+    ## frank.li@nothing.tech, 2024/10/23 add for ARCA-3816
+    ## Create a cpu group for ntcam-algo processes
+    mkdir /dev/cpuctl/ntcam-algo
+    chown system system /dev/cpuctl/ntcam-algo
+    chown system system /dev/cpuctl/ntcam-algo/cgroup.procs
+    chown system system /dev/cpuctl/ntcam-algo/cpu.idle
+    chown system system /dev/cpuctl/ntcam-algo/cpu.shares
+    chown system system /dev/cpuctl/ntcam-algo/cpu.uclamp.latency_sensitive
+    chown system system /dev/cpuctl/ntcam-algo/cpu.uclamp.max
+    chown system system /dev/cpuctl/ntcam-algo/cpu.uclamp.min
+    chown system system /dev/cpuctl/ntcam-algo/tasks
+    chmod 0664 /dev/cpuctl/ntcam-algo/cgroup.procs
+    chmod 0664 /dev/cpuctl/ntcam-algo/cpu.idle
+    chmod 0664 /dev/cpuctl/ntcam-algo/cpu.shares
+    chmod 0664 /dev/cpuctl/ntcam-algo/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/ntcam-algo/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/ntcam-algo/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/ntcam-algo/tasks
+
+
+    # Cpuset
+    ## zhiming.guan@bsp, 2023/12/04, for AERO-4567
+    chown system system /dev/cpuset/top-app/cpus
+    chown system system /dev/cpuset/foreground/cpus
+    chown system system /dev/cpuset/foreground_window/cpus
+    chown system system /dev/cpuset/system-background/cpus
+    chown system system /dev/cpuset/background/cpus
+    chown system system /dev/cpuset/restricted/cpus
+    chown system system /dev/cpuset/camera-daemon/cpus
+
+    chmod 0664 /dev/cpuset/top-app/cpus
+    chmod 0664 /dev/cpuset/foreground/cpus
+    chmod 0664 /dev/cpuset/foreground_window/cpus
+    chmod 0664 /dev/cpuset/system-background/cpus
+    chmod 0664 /dev/cpuset/background/cpus
+    chmod 0664 /dev/cpuset/restricted/cpus
+    chmod 0664 /dev/cpuset/camera-daemon/cpus
+
+    chown system system /dev/cpuset/audio-app/cpus
+    chown system system /dev/cpuset/audio-app/cgroup.procs
+    chmod 0664 /dev/cpuset/audio-app/cpus
+    chmod 0664 /dev/cpuset/audio-app/cgroup.procs
+    ## endif
+
+    ##zhiming.guan@bsp, 2024/09/05, for AEROP-2378
+    # create a cpuset for dex2oat processes
+    mkdir /dev/cpuset/dex2oat
+    copy /dev/cpuset/cpus /dev/cpuset/dex2oat/cpus
+    copy /dev/cpuset/mems /dev/cpuset/dex2oat/mems
+    chown system system /dev/cpuset/dex2oat
+    chown system system /dev/cpuset/dex2oat/cgroup.procs
+    chown system system /dev/cpuset/dex2oat/cpus
+    chown system system /dev/cpuset/dex2oat/tasks
+    chmod 0664 /dev/cpuset/dex2oat/cgroup.procs
+    chmod 0664 /dev/cpuset/dex2oat/cpus
+    chmod 0664 /dev/cpuset/dex2oat/tasks
+    ## endif
+
+    ## zhiming.guan@bsp, 2024/12/02, for TFT-3922
+    mkdir /dev/cpuset/nt_foreground
+    copy /dev/cpuset/cpus /dev/cpuset/nt_foreground/cpus
+    copy /dev/cpuset/mems /dev/cpuset/nt_foreground/mems
+    chown system system /dev/cpuset/nt_foreground
+    chown system system /dev/cpuset/nt_foreground/cgroup.procs
+    chown system system /dev/cpuset/nt_foreground/cpus
+    chown system system /dev/cpuset/nt_foreground/tasks
+    chmod 0664 /dev/cpuset/nt_foreground/cgroup.procs
+    chmod 0664 /dev/cpuset/nt_foreground/cpus
+    chmod 0664 /dev/cpuset/nt_foreground/tasks
+    ## endif
+
+    ## frank.li@nothing.tech, 2024/10/23 add for ARCA-3816
+    ## Create a cpuset for ntcam-algo processes
+    mkdir /dev/cpuset/ntcam-algo
+    copy /dev/cpuset/cpus /dev/cpuset/ntcam-algo/cpus
+    copy /dev/cpuset/mems /dev/cpuset/ntcam-algo/mems
+    chown system camera /dev/cpuset/ntcam-algo
+    chown system camera /dev/cpuset/ntcam-algo/cgroup.procs
+    chown system camera /dev/cpuset/ntcam-algo/cpus
+    chown system system /dev/cpuset/ntcam-algo/tasks
+    chmod 0664 /dev/cpuset/ntcam-algo/cgroup.procs
+    chmod 0664 /dev/cpuset/ntcam-algo/cpus
+    chmod 0664 /dev/cpuset/ntcam-algo/tasks
+
+
+    # Other
+    ## frank.li@nothing.tech, 2024/10/23 add for ARCA-3816
+    ## Create an stune group for ntcam-algo processes
+    mkdir /dev/stune/ntcam-algo
+    chown system system /dev/stune/ntcam-algo
+    chown system system /dev/stune/ntcam-algo/tasks
+    chown system system /dev/stune/ntcam-algo/cgroup.procs
+    chmod 0664 /dev/stune/ntcam-algo/tasks
+    chmod 0664 /dev/stune/ntcam-algo/cgroup.procs
+
+
+
+on post-fs-data
+    ##ifdef NTF_PERF_TRACE
+    ##zhiming.guan@bsp, 2023/04/19, [TFT-443] catch trace and postback when detect app jank
+    mkdir /data/local/nt_traces 0777 shell shell
+    ##endif NTF_PERF_TRACE

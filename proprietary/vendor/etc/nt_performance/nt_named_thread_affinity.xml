@@ -1,0 +1,15 @@
+<!--
+Example:
+<NAMED_THREAD_AFFINITY_CONFIG>
+    <Package name="com.tencent.ig">
+		<Action cmd="SET_NAMED_THREAD_AFFINITY" param1="Thread" param2="0-1,5-6" ></Action>
+		<Action cmd="SET_NAMED_THREAD_AFFINITY" param1="RenderThread"  param2="2-4" ></Action>
+    </Package>
+    <Package name="com.HoYoverse.hkrpgoversea">
+		<Action cmd="SET_NAMED_THREAD_AFFINITY" param1="UnityMain" param2="2-4" ></Action>
+		<Action cmd="SET_NAMED_THREAD_AFFINITY" param1="UnityGfxDeviceW"  param2="5-6" ></Action>
+    </Package>
+</NAMED_THREAD_AFFINITY_CONFIG>
+-->
+<NAMED_THREAD_AFFINITY_CONFIG>
+</NAMED_THREAD_AFFINITY_CONFIG>

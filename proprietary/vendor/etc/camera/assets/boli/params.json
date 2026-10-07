@@ -1,0 +1,1 @@
+[{"defaultValue":0.0,"domain":[0.0,2.0],"name":"flip","uniform":209,"value":0.0},{"defaultValue":0.0,"domain":[0.0,360.0],"name":"rotate","uniform":210,"value":0.0},{"defaultValue":0.0333333,"domain":[0.001,0.5],"name":"width","uniform":301,"value":0.0333333},{"defaultValue":1.0,"domain":[0.001,2.5],"name":"amp","uniform":304,"value":1.0}]

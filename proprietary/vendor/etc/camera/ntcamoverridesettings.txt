@@ -1,0 +1,11 @@
+MaxRequestQueueDepth=1
+MaxRequestQueueDepthForBokeh=1
+NumberOfThread=1
+LogInfoMask=0xffff
+LogVerboseMask=0xffff
+LogEnable=1
+LogDebugMask=0xffff
+ForceNodeSpecialDump=0
+LivePendingRequestTimeOut=30000
+EnableReuqestLIFO=1
+CameraPosition=0,1,2,3,-1,4,4,4

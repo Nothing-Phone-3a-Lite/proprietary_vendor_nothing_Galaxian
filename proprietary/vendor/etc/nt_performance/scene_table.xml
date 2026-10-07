@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCNTABLE>
+    <!--launcher-->
+    <scenario name="APP_START_EXIT_ANIMATION" id="1">
+        <data cmd="CMD_CPUSET_FG_CPUS" params1="0-5" holdtime="500"></data>
+        <data cmd="CMD_CPUSET_BG_CPUS" params1="0-1"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_PROCS"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_UCLAMP_MIN" params1="80"></data>
+        <data cmd="CMD_ANIMATION_BOOST"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" holdtime="500" params1="0-1"></data>
+        <data cmd="CMD_BACKGROUND_FREEZE" holdtime="500"></data>
+    </scenario>
+
+    <scenario name="LAUNCHER_NORMAL_ANIMATION" id="2">
+        <data cmd="CMD_ANIMATION_BOOST"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_PROCS" restore="root"></data>
+        <data cmd="CMD_PROCESS_AFFINITY" params1="4,5,6,7"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_UCLAMP_MIN" params1="80"></data>
+    </scenario>
+
+    <scenario name="LAUNCHER_ITEM_LOADING" id="3">
+        <data cmd="CMD_THREAD_BOOST"></data>
+    </scenario>
+
+    <scenario name="LAUNCHER_OVERLOAD_ANIMATION" id="4">
+        <data cmd="CMD_ANIMATION_BOOST"></data>
+        <data cmd="CMD_PROCESS_AFFINITY" params1="4,5,6,7"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_PROCS" restore="root"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_UCLAMP_MIN" params1="100"></data>
+    </scenario>
+
+    <!--systemui-->
+    <scenario name="QS_PULL_DOWN" id="100">
+        <data cmd="CMD_CPUSET_TA_CPUS" delaytime="50" params1="0-4"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_PROCS"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_UCLAMP_MIN" params1="100"></data>
+        <data cmd="CMD_ANIMATION_BOOST"></data>
+        <data cmd="CMD_PROCESS_AFFINITY" params1="4,5,6,7"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-1"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+    </scenario>
+
+    <scenario name="UNLOCK_ANIMATION" id="101">
+        <data cmd="CMD_ANIMATION_BOOST"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_PROCS" restore="root"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_UCLAMP_MIN" params1="40"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-1"></data>
+        <data cmd="CMD_CPUSET_TA_CPUS" params1="0-4"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+        <data cmd="CMD_PROCESS_AFFINITY" params1="4,5,6,7"></data>
+    </scenario>
+
+    <scenario name="SYSTEMUI_NORMAL_ANIMATION" id="102">
+        <data cmd="CMD_ANIMATION_BOOST"></data>
+        <data cmd="CMD_PROCESS_AFFINITY" params1="4,5,6,7"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_PROCS" restore="root"></data>
+        <data cmd="CMD_CPUCTL_RESTRICTED_UCLAMP_MIN" params1="40"></data>
+    </scenario>
+
+    <!--camera-->
+    <scenario name="CAMERA_OPEN" id="200">
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-7"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="4-4" restore="4-4"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="CAMERA_CONFIG_SLOW_MOTION" id="201">
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-1" holdtime="4000"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+    </scenario>
+    <scenario name="CAPTURE_START" id="202">
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-7"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+    </scenario>
+    <scenario name="LIMIT_HAL_CAPTURE_START" id="203">
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-5"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+    </scenario>
+    <scenario name="CONTINUOUS_CAPTURE_START" id="204">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="0-7" restore="4-4"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="NTCAM_ALGO_PROCESS1" id="205">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="5-7" restore="4-4"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="NTCAM_ALGO_PROCESS2" id="206">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="4-5" restore="4-4"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="NTCAM_ALGO_PROCESS3" id="207">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="4-4" restore="4-4"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="CAMERA_CLOSE" id="208">
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-7"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="CAMERA_EXIT1" id="209">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="0-7" restore="4-4"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="CAMERA_EXIT2" id="210">
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" holdtime="1500" params1="0-3"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="4-4" restore="4-4"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="CAMERA_LIMIT_TOP" id="211">
+        <data cmd="CMD_CPUSET_TA_CPUS" holdtime="1500" params1="0-3"></data>
+        <data cmd="CMD_CPUSET_FG_CPUS" holdtime="1500" params1="0-3"></data>
+    </scenario>
+    <scenario name="CAMERA_GOING_GALLERY" id="212">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="0-3" restore="0-7"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+    </scenario>
+    <scenario name="CAMERA_GONE_GALLERY" id="213">
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-2"></data>
+    </scenario>
+    <scenario name="CAMERA_EXIT_BACK" id="214">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_PROCS" process="camerahalserver"></data>
+        <data cmd="CMD_CPUSET_CAMERA_DAEMON_CPUS" params1="0-0"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="1-1" restore="4-4"></data>
+    </scenario>
+    <scenario name="CAMERA_SHUTTER_BUTTON" id="215">
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_PROCS" process="vendor.noth.hardware.camera-service"></data>
+        <data cmd="CMD_CPUSET_NTCAM_ALGO_CPUS" params1="1-1" holdtime="80" restore="4-4"></data>
+    </scenario>
+
+
+    <!--game-->
+    <scenario name="GAME1" id="300">
+        <data cmd="CMD_NT_NAMED_THREAD_AFFINITY" needparams="true"></data>
+    </scenario>
+    <scenario name="GAME2" id="301">
+    </scenario>
+	<!-- test -->
+	<scenario name="test" id="10000">
+	<data cmd="CMD_CPUSET_BG_CPUS" holdtime="500" params1="0-1"></data>
+    </scenario>
+</SCNTABLE>

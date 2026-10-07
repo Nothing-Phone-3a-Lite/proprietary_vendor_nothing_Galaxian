@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMDTABLE>
+    <!-- cpuset proc-->
+    <CMD name="CMD_CPUSET_TA_PROCS" id="100">
+        <Entry path="/dev/cpuset/top-app/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_FG_PROCS" id="101">
+        <Entry path="/dev/cpuset/foreground/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_BG_PROCS" id="102">
+        <Entry path="/dev/cpuset/background/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_SBG_PROCS" id="103">
+        <Entry path="/dev/cpuset/system-background/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_CAMERA_DAEMON_PROCS" id="104">
+        <Entry path="/dev/cpuset/camera-daemon/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_RESTRICTED_PROCS" id="105">
+        <Entry path="/dev/cpuset/restricted/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_DEX2OAT_PROCS" id="106">
+        <Entry path="/dev/cpuset/dex2oat/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_NTCAM_ALGO_PROCS" id="107">
+        <Entry path="/dev/cpuset/ntcam-algo/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_AUDIO_PROCS" id="108">
+        <Entry path="/dev/cpuset/audio-app/cgroup.procs"></Entry>
+    </CMD>
+
+    <!-- cpuset tasks-->
+    <CMD name="CMD_CPUSET_TA_TASKS" id="150">
+        <Entry path="/dev/cpuset/top-app/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_FG_TASKS" id="151">
+        <Entry path="/dev/cpuset/foreground/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_BG_TASKS" id="152">
+        <Entry path="/dev/cpuset/background/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_SBG_TASKS" id="153">
+        <Entry path="/dev/cpuset/system-background/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_CAMERA_DAEMON_TASKS" id="154">
+        <Entry path="/dev/cpuset/camera-daemon/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_RESTRICTED_TASKS" id="155">
+        <Entry path="/dev/cpuset/restricted/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_DEX2OAT_TASKS" id="156">
+        <Entry path="/dev/cpuset/dex2oat/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_NTCAM_ALGO_TASKS" id="157">
+        <Entry path="/dev/cpuset/ntcam-algo/tasks"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_AUDIO_TASKS" id="158">
+        <Entry path="/dev/cpuset/audio-app/tasks"></Entry>
+    </CMD>
+
+    <!-- cpuset cpus-->
+    <CMD name="CMD_CPUSET_TA_CPUS" id="200">
+        <Entry path="/dev/cpuset/top-app/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_FG_CPUS" id="201">
+        <Entry path="/dev/cpuset/foreground/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_BG_CPUS" id="202">
+        <Entry path="/dev/cpuset/background/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_SBG_CPUS" id="203">
+        <Entry path="/dev/cpuset/system-background/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_CAMERA_DAEMON_CPUS" id="204">
+        <Entry path="/dev/cpuset/camera-daemon/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_RESTRICTED_CPUS" id="205">
+        <Entry path="/dev/cpuset/restricted/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_DEX2OAT_CPUS" id="206">
+        <Entry path="/dev/cpuset/dex2oat/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_NTCAM_ALGO_CPUS" id="207">
+        <Entry path="/dev/cpuset/ntcam-algo/cpus"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUSET_AUDIO_CPUS" id="208">
+        <Entry path="/dev/cpuset/audio-app/cpus"></Entry>
+    </CMD>
+
+
+    <!-- cpuctl procs-->
+    <CMD name="CMD_CPUCTL_SYS_PROCS" id="300">
+        <Entry path="/dev/cpuctl/system/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_SBG_PROCS" id="301">
+        <Entry path="/dev/cpuctl/system-background/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_TA_PROCS" id="302">
+        <Entry path="/dev/cpuctl/top-app/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_DEX_PROCS" id="303">
+        <Entry path="/dev/cpuctl/dex2oat/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_FG_PROCS" id="304">
+        <Entry path="/dev/cpuctl/foreground/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_RT_PROCS" id="305">
+        <Entry path="/dev/cpuctl/rt/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_BG_PROCS" id="306">
+        <Entry path="/dev/cpuctl/background/cgroup.procs"></Entry>
+    </CMD>
+        <CMD name="CMD_CPUCTL_RESTRICTED_PROCS" id="307">
+        <Entry path="/dev/cpuctl/restricted/cgroup.procs"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_ROOT_PROCS" id="308">
+        <Entry path="/dev/cpuctl/cgroup.procs"></Entry>
+    </CMD>
+
+    <!-- cpuctl uclamp-->
+    <CMD name="CMD_CPUCTL_SYS_UCLAMP_MIN" id="400">
+        <Entry path="/dev/cpuctl/system/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_SYS_UCLAMP_MAX" id="401">
+        <Entry path="/dev/cpuctl/system/cpu.uclamp.max"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_SBG_UCLAMP_MIN" id="402">
+        <Entry path="/dev/cpuctl/system-background/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_SBG_UCLAMP_MAX" id="403">
+        <Entry path="/dev/cpuctl/system-background/cpu.uclamp.max"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_TA_UCLAMP_MIN" id="404">
+        <Entry path="/dev/cpuctl/top-app/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_TA_UCLAMP_MAX" id="405">
+        <Entry path="/dev/cpuctl/top-app/cpu.uclamp.max"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_DEX_UCLAMP_MIN" id="406">
+        <Entry path="/dev/cpuctl/dex2oat/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_DEX_UCLAMP_MAX" id="407">
+        <Entry path="/dev/cpuctl/dex2oat/cpu.uclamp.max"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_FG_UCLAMP_MIN" id="408">
+        <Entry path="/dev/cpuctl/foreground/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_FG_UCLAMP_MAX" id="409">
+        <Entry path="/dev/cpuctl/foreground/cpu.uclamp.max"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_RT_UCLAMP_MIN" id="410">
+        <Entry path="/dev/cpuctl/rt/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_RT_UCLAMP_MAX" id="411">
+        <Entry path="/dev/cpuctl/rt/cpu.uclamp.max"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_BG_UCLAMP_MIN" id="412">
+        <Entry path="/dev/cpuctl/background/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_BG_UCLAMP_MAX" id="413">
+        <Entry path="/dev/cpuctl/background/cpu.uclamp.max"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_RESTRICTED_UCLAMP_MIN" id="414">
+        <Entry path="/dev/cpuctl/restricted/cpu.uclamp.min"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_RESTRICTED_UCLAMP_MAX" id="415">
+        <Entry path="/dev/cpuctl/restricted/cpu.uclamp.max"></Entry>
+    </CMD>
+
+    <!-- cpuctl cpu.shares-->
+    <CMD name="CMD_CPUCTL_SYS_CPU_SHARES" id="440">
+        <Entry path="/dev/cpuctl/system/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_SBG_CPU_SHARES" id="441">
+        <Entry path="/dev/cpuctl/system-background/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_TA_CPU_SHARES" id="442">
+        <Entry path="/dev/cpuctl/top-app/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_DEX_CPU_SHARES" id="443">
+        <Entry path="/dev/cpuctl/dex2oat/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_FG_CPU_SHARES" id="444">
+        <Entry path="/dev/cpuctl/foreground/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_RT_CPU_SHARES" id="445">
+        <Entry path="/dev/cpuctl/rt/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_BG_CPU_SHARES" id="446">
+        <Entry path="/dev/cpuctl/background/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_RESTRICTED_CPU_SHARES" id="447">
+        <Entry path="/dev/cpuctl/restricted/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_CAMERA_DAEMON_CPU_SHARES" id="448">
+        <Entry path="/dev/cpuctl/camera-daemon/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_NTCAM_ALGO_CPU_SHARES" id="449">
+        <Entry path="/dev/cpuctl/ntcam-algo/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_NTFG_CPU_SHARES" id="450">
+        <Entry path="/dev/cpuctl/nt_foreground/cpu.shares"></Entry>
+    </CMD>
+    <CMD name="CMD_CPUCTL_FW_CPU_SHARES" id="451">
+        <Entry path="/dev/cpuctl/foreground_window/cpu.shares"></Entry>
+    </CMD>
+
+
+<!-- thread priority -->
+    <CMD name="CMD_ANIMATION_BOOST" id="500">
+        <Entry func="animationBoost"></Entry>
+        <ParamsNum num="2"></ParamsNum>
+    </CMD>
+    <CMD name="CMD_THREAD_BOOST" id="501">
+        <Entry func="threadBoost"></Entry>
+        <ParamsNum num="2"></ParamsNum>
+    </CMD>
+
+<!-- thread affinity -->
+    <CMD name="CMD_THREAD_AFFINITY" id="600">
+        <Entry func="threadAffinity"></Entry>
+        <ParamsNum num="2"></ParamsNum>
+    </CMD>
+<!-- process affinity -->
+    <CMD name="CMD_PROCESS_AFFINITY" id="601">
+        <Entry func="processAffinity"></Entry>
+        <ParamsNum num="2"></ParamsNum>
+    </CMD>
+<!-- nt named thread affinity feature -->
+    <CMD name="CMD_NT_NAMED_THREAD_AFFINITY" id="602">
+        <Entry func="setNtNameThreadAffinity"></Entry>
+        <ParamsNum num="0"></ParamsNum>
+    </CMD>
+<!-- freeze -->
+    <CMD name="CMD_BACKGROUND_FREEZE" id="700">
+        <Entry func="backgroundProcessFreeze"></Entry>
+        <ParamsNum num="0"></ParamsNum>
+    </CMD>
+<!-- background load limit -->
+    <CMD name="CMD_BACKGROUND_LOAD_LIMIT" id="800">
+        <Entry func="backgroundLoadLimit"></Entry>
+        <ParamsNum num="1"></ParamsNum>
+    </CMD>
+
+<!-- platform resource cmd -->
+    <CMD name="CMD_PLATFORM_CONTROL" id="900">
+        <Entry func="platformResourceControl"></Entry>
+        <ParamsNum num="1"></ParamsNum>
+    </CMD>
+
+<!-- sf boost -->
+    <CMD name="CMD_SF_CONTROL_AFFINITY" id="1000">
+        <Entry func="sfBindCoreControll"></Entry>
+        <ParamsNum num="0"></ParamsNum>
+    </CMD>
+</CMDTABLE>

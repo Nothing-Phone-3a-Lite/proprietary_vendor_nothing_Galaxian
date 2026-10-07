@@ -1,0 +1,18 @@
+{
+    /** sample json:
+    "0x80A4_0": {               // 0x80A4_0: operationMode_CameraId
+        "eisMode": -1,          // -1: unset, 0: cpu, 1: gpu, 2: ICA/WPE
+        "eisOption": -1,        // -1: unset, refer to @morpho_VideoStabilizer_Option
+        "frameDelay": 30,       // frame delay only for eisv3
+        "widthMargin": 0.2,     // width margin
+        "heightMargin": 0.2     // height margin
+    },*/
+
+    "0x0_0": {
+        "eisMode": -1,
+        "eisOption": -1,
+        "frameDelay": 30,
+        "widthMargin": 0.2,
+        "heightMargin": 0.2
+    }
+}
