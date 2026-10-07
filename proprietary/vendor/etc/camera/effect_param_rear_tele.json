@@ -1,0 +1,23 @@
+{
+    "param": [
+        {
+            "mfnr_cfactor_day": 4,
+            "mfnr_cfactor_night": 4,
+            "mfnr_bpc_enable_day": 0,
+            "mfnr_bpc_enable_night": 0,
+            "use_nn_denoise": 0,
+            "nlm_strenth":2.0,
+            "nlm_lut_thresh":[0.6, 0.6, 0.4, 0.4, 0.8, 0.8],
+            "nlm_lut_thresh_partition":[0, 0.2, 0.21, 0.65, 0.66, 1.0]
+        },
+        {
+            "nlm_strenth": 2.5,
+            "lux": [0, 1000]
+        },
+        {
+            "use_nn_denoise": 1,
+            "dgain_strength_day": 0.7,
+            "again": [8, 64]
+        }
+    ]
+}

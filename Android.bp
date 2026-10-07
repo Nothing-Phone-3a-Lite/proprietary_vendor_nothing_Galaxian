@@ -10,6 +10,29 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnelib",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libnelib.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "7816-3-T1",
     owner: "nothing",
     strip: {
@@ -109,6 +132,817 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.b2j",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.b2j.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libcamera_metadata",
+                "libntofflinepostproc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.b2y",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.b2y.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libcamera_metadata",
+                "libntofflinepostproc",
+                "libntf",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.beauty",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.beauty.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libAncHumanBeauty",
+                "libancbase-beauty",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.bokehdepthjiigan",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.bokehdepthjiigan.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntf",
+                "libntcamcommonutils",
+                "libwa_depth",
+                "libwa_refocus",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.bokehhdr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.bokehhdr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntf",
+                "libntcamcommonutils",
+                "libarcsoft_native_hdrbokeh_engine",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.cfr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.cfr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libpfr",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.darkvision",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.darkvision.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libarcsoft_dark_vision_raw",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.dmp",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.dmp.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libbinder",
+                "libjpeg",
+                "libexif",
+                "libexpat",
+                "libz",
+                "libcamera_metadata",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.filter",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.filter.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libmorpho_RapidEffect",
+                "librender_lib",
+                "libstmobile_effect",
+                "libffavc",
+                "libntcamyuv",
+                "libntf",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.frt",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.frt.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libportrait_repair_apu",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.jpeg",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.jpeg.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libcamera_metadata",
+                "libntofflinepostproc",
+                "libntcamultrahdr",
+                "libntcamyuv",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.jpegr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.jpegr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libjpeg",
+                "libntcamyuv",
+                "libntf",
+                "libntcamimage_io",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.ldc",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.ldc.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libwa_widelens_undistort",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.memcpy",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.memcpy.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.mmf",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.mmf.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libcamera_metadata",
+                "libntofflinepostproc",
+                "libntf",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.p2y",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.p2y.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libcamera_metadata",
+                "libntofflinepostproc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.portrait",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.portrait.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libarcsoft_scbokeh_image",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.rawhdr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.rawhdr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libanc_hdr",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.singlebokeh",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.singlebokeh.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libanc_single_bokeh",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.supermoon",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.supermoon.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libanc_objdetection",
+                "libanc_objdetection_impl",
+                "libanc_supermoon",
+                "libanc_supermoon_impl",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.supernight",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.supernight.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libanc_hdr",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.superportraitnight",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.superportraitnight.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libarcsoft_portrait_super_night_raw",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.watermark",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.watermark.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libntcamyuv",
+                "libntcamskia",
+                "libntf",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.y2y",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.y2y.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libcamera_metadata",
+                "libntofflinepostproc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.yuvhdr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.yuvhdr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libanc_fullhdr",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.nothing.node.yuvsr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camera/node/com.nothing.node.yuvsr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libntcamcommonutils",
+                "libsdk_sr",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/node",
     prefer: true,
     soc_specific: true,
 }
@@ -1169,6 +2003,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libAncHumanBeauty",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libAncHumanBeauty.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libdl",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libBasicModule",
     owner: "nothing",
     strip: {
@@ -1664,6 +2526,428 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libanc_dc_base",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_dc_base.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_fullhdr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_fullhdr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libm",
+                "libz",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_fullhdr_impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_fullhdr_impl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
+                "libdl",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_hdr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_hdr.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_hdr_adapter_front_main",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_hdr_adapter_front_main.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_hdr_adapter_rear_main",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_hdr_adapter_rear_main.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_hdr_adapter_rear_tele",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_hdr_adapter_rear_tele.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_hdr_adapter_rear_uw",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_hdr_adapter_rear_uw.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_hdr_check_nothing",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_hdr_check_nothing.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_objdetection",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_objdetection.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_objdetection_impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_objdetection_impl.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_scene",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_scene.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_single_bokeh",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_single_bokeh.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_single_bokeh_impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_single_bokeh_impl.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_single_rt_bokeh",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_single_rt_bokeh.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_supermoon",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_supermoon.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libanc_supermoon_impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libanc_supermoon_impl.so",
+            ],
+            shared_libs: [
+                "libanc_objdetection",
+                "liblog",
+                "libz",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libanc_supervq",
     owner: "nothing",
     strip: {
@@ -1678,6 +2962,30 @@ cc_prebuilt_library_shared {
                 "libz",
                 "liblog",
                 "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libancbase-beauty",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libancbase-beauty.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
                 "libdl",
                 "libc",
             ],
@@ -1785,6 +3093,414 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libapu_mdw",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapusys",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libapusys.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_aiscenedetection",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_aiscenedetection.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_beautyshot",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_beautyshot.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dark_vision_raw",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_dark_vision_raw.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "libOpenCL",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_image",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_video",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_high_dynamic_range",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_high_dynamic_range_v5",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_high_dynamic_range_v5.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_mf_superresolution",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_mf_superresolution.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_native_hdrbokeh_engine",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_native_hdrbokeh_engine.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "libarcsoft_high_dynamic_range",
+                "libarcsoft_dualcam_refocus_image",
+                "libarcsoft_dualcam_refocus_video",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_panorama",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_panorama.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_portrait_super_night_raw",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_portrait_super_night_raw.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "libOpenCL",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_scbokeh_image",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_scbokeh_image.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_scbokeh_preview",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_scbokeh_preview.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_super_night_raw",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_super_night_raw.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "libOpenCL",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_watermark",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsoft_watermark.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -2684,6 +4400,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcamxextension_night",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamxextension_night.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libmpbase",
+                "libarcsoft_super_night_raw",
+                "libarcsoft_portrait_super_night_raw",
+                "libarcsoft_dark_vision_raw",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcarrierconfig",
     owner: "nothing",
     strip: {
@@ -3533,6 +5278,30 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libSQLiteModule_VER_ALL",
                 "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libffavc",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libffavc.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
                 "libc",
             ],
         },
@@ -4400,6 +6169,33 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmorpho_RapidEffect",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmorpho_RapidEffect.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libdl",
+                "libGLESv2",
+                "libEGL",
+                "libnativewindow",
+                "libm",
             ],
         },
     },
@@ -5877,6 +7673,91 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libneuron_graph_delegate.mtk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libneuron_graph_delegate.mtk.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "vendor.mediatek.hardware.apuware.utils@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libneuron_platform",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libneuron_platform.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libvpu",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnoteengine",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnoteengine.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libz",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnpagent",
     owner: "nothing",
     strip: {
@@ -5916,6 +7797,409 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libntcamallocator",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamallocator.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamera_metadata",
+                "libutils",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "libntcamcommonutils",
+                "libgralloctypes",
+                "libhidlbase",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.mapper@4.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamcommonutils",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamcommonutils.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libntf",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamcore",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamcore.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamera_metadata",
+                "libutils",
+                "libntcamcommonutils",
+                "libntcamthread",
+                "libntcamselector",
+                "libntcammetadata",
+                "libntcamextened",
+                "libntcamallocator",
+                "libdmabufheap",
+                "libntf",
+                "android.hardware.graphics.mapper@4.0",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamera2ndk_vendor_v2",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamera2ndk_vendor_v2.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libfmq",
+                "libhidlbase",
+                "libhardware",
+                "libnativewindow",
+                "liblog",
+                "libutils",
+                "libstagefright_foundation",
+                "libcutils",
+                "libcamera_metadata",
+                "libmediandk",
+                "android.frameworks.cameraservice.common-V1-ndk",
+                "android.frameworks.cameraservice.device-V1-ndk",
+                "android.frameworks.cameraservice.service-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamextened",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamextened.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamera_metadata",
+                "libutils",
+                "libntcamcommonutils",
+                "libntcamthread",
+                "libntcammetadata",
+                "libprotobuf-cpp-full-21.7",
+                "libntcampipepb",
+                "libhardware_legacy",
+                "libntcamera2ndk_vendor_v2",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamimage_io",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamimage_io.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcammetadata",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcammetadata.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamera_metadata",
+                "libutils",
+                "libntcamcommonutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcampipepb",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcampipepb.so",
+            ],
+            shared_libs: [
+                "libprotobuf-cpp-lite-21.7",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamselector",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamselector.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamera_metadata",
+                "libutils",
+                "libntcamcommonutils",
+                "libntcammetadata",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamskia",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamskia.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "libdl",
+                "libEGL",
+                "libGLESv2",
+                "liblog",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamthread",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamthread.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamera_metadata",
+                "libutils",
+                "libntcamcommonutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamultrahdr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamultrahdr.so",
+            ],
+            shared_libs: [
+                "libntcamimage_io",
+                "libjpeg",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntcamyuv",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntcamyuv.so",
+            ],
+            shared_libs: [
+                "libjpeg",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libntf",
     owner: "nothing",
     strip: {
@@ -5930,6 +8214,41 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libntofflinepostproc",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libntofflinepostproc.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libui",
+                "libmtkisp_metadata_v3",
+                "vendor.mediatek.hardware.camera.isphal-V1-ndk",
+                "libbase",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libcamera_metadata",
+                "libntcamcommonutils",
                 "libc",
                 "libm",
                 "libdl",
@@ -6019,6 +8338,30 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpfr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpfr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -6300,6 +8643,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "librender_lib",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librender_lib.so",
+            ],
+            shared_libs: [
+                "libstmobile_effect",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "librgbwlightsensor",
     owner: "nothing",
     strip: {
@@ -6416,6 +8786,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsdk_sr",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdk_sr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsensor_extension",
     owner: "nothing",
     strip: {
@@ -6520,6 +8914,30 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstmobile_effect",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstmobile_effect.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
             ],
         },
     },
@@ -7119,6 +9537,140 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpu",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvpu.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libion",
+                "liblog",
+                "libcutils",
+                "libapusys",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpu5",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvpu5.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libapu_mdw",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwa_depth",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_depth.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwa_refocus",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_refocus.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwa_rtdof",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_rtdof.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libc",
             ],
         },
     },
@@ -20812,6 +23364,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.utils@2.0",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.audio@8.1",
     owner: "nothing",
     strip: {
@@ -22150,6 +24730,68 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.noth.hardware.camera-V1-ndk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.noth.hardware.camera-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.noth.hardware.camera-service-impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.noth.hardware.camera-service-impl.so",
+            ],
+            shared_libs: [
+                "libui_shim",
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libcamera_metadata",
+                "libutils",
+                "libui",
+                "libbase",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libntcamcore",
+                "libntcamcommonutils",
+                "vendor.noth.hardware.camera-V1-ndk",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.noth.hardware.sensor.sensor_extension-V1-ndk",
     owner: "nothing",
     strip: {
@@ -22303,6 +24945,96 @@ cc_prebuilt_library_shared {
                 "libmedia",
                 "liblog",
                 "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libencoderjpeg_jni",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libencoderjpeg_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "liblog",
+                "libjpeg",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libged_sys",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libged_sys.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libsync",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloc_extra_sys",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libgralloc_extra_sys.so",
+            ],
+            shared_libs: [
+                "libsf_cpupolicy",
+                "libged_sys",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libdmabufheap",
+                "libutilscallstack",
+                "android.hardware.graphics.common@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -22534,6 +25266,104 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmtkisp_metadata_sys",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmtkisp_metadata_sys.so",
+            ],
+            shared_libs: [
+                "libui",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libofflineproc_jni_aidl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libofflineproc_jni_aidl.so",
+            ],
+            shared_libs: [
+                "libcamera_client",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libandroid_runtime",
+                "libnativehelper",
+                "libhidlbase",
+                "libaudiofoundation",
+                "libbinder",
+                "libbinder_ndk",
+                "libui",
+                "libvndksupport",
+                "libnativewindow",
+                "libcamera_metadata",
+                "vendor.mediatek.hardware.camera.isphal-V1-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.allocator@4.0",
+                "libgralloc_extra_sys",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsf_cpupolicy",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libsf_cpupolicy.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsignal",
     owner: "nothing",
     strip: {
@@ -22729,6 +25559,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.isphal-V1-ndk_system_ext",
+    stem: "vendor.mediatek.hardware.camera.isphal-V1-ndk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.videotelephony-V1-ndk",
     owner: "nothing",
     strip: {
@@ -22848,6 +25706,51 @@ android_app_import {
         enabled: false,
     },
     privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "NTCamera",
+    owner: "nothing",
+    apk: "proprietary/system_ext/priv-app/NTCamera/NTCamera.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "NTGallery",
+    owner: "nothing",
+    apk: "proprietary/system_ext/priv-app/NTGallery/NTGallery.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "NothingExperience",
+    owner: "nothing",
+    apk: "proprietary/system_ext/priv-app/NothingExperience/NothingExperience.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "androidx.camera.extensions.impl.advanced",
+    owner: "nothing",
+    jars: [
+        "proprietary/system_ext/framework/androidx.camera.extensions.impl.advanced.jar",
+    ],
     system_ext_specific: true,
 }
 
@@ -23064,6 +25967,15 @@ prebuilt_etc_xml {
     name: "mtkgnss-batching.xml",
     owner: "nothing",
     src: "proprietary/vendor/etc/vintf/manifest/mtkgnss-batching.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.noth.hardware.camera-service.xml",
+    owner: "nothing",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.noth.hardware.camera-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -23585,7 +26497,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mt6878/camerahalserver",
             ],
             shared_libs: [
-                "libcamera_metadata_ntshim",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -23838,6 +26749,40 @@ cc_prebuilt_binary {
             shared_libs: [
                 "vendor.mediatek.hardware.pq_aidl-impl",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.noth.hardware.camera-service",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.noth.hardware.camera-service",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libui",
+                "libbase",
+                "libhidlbase",
+                "libbinder_ndk",
+                "vendor.noth.hardware.camera-service-impl",
+                "vendor.noth.hardware.camera-V1-ndk",
                 "libc",
                 "libm",
                 "libdl",

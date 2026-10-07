@@ -1,0 +1,20 @@
+{
+    "SUPERMOON": {
+        "REAR_MAIN_1": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 100,
+                "TRIGGER_GAIN_2": 400,
+                "TRIGGER_GAIN_3": 800,
+                "TRIGGER_GAIN_4": 1600,
+                "TRIGGER_GAIN_5": 3000,
+                "TRIGGER_GAIN_6": 4500
+            },
+            "PROFILE_1": {},
+            "PROFILE_2": {},
+            "PROFILE_3": {},
+            "PROFILE_4": {},
+            "PROFILE_5": {},
+            "PROFILE_6": {}
+        }
+    }
+}
